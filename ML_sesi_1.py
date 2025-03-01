@@ -17,7 +17,6 @@ plt.xlabel('Pendapatan Rata-rata (1000$)')
 plt.ylabel('Penjualan Pizza (1000 buah)')
 plt.legend()
 plt.grid(True)
-plt.show()
 
 correlation = np.corrcoef(revenue, sales)[0, 1]
 print(f"Koefisien Korelasi (R): {correlation:.2f}")
@@ -33,3 +32,5 @@ print(f"SSR: {ssr:.2f}")
 print(f"SSE: {sse:.2f}")
 print(f"SST: {sst:.2f}")
 print(f"R-squared: {r_squared:.2f}")
+
+plt.show()
